@@ -1,0 +1,123 @@
+body{
+  background-color: #fbf4f438;
+}
+#wrap{
+  width: 530px;
+  /* margin: 20px auto 0; */
+  height: 750px;
+}
+#input{
+  border: 1px dotted green;
+  padding: 2%;
+  outline: none;
+  width: 80%;
+  background-color: white;
+  margin-bottom: 15px;
+}
+#submit{
+   float: right;
+   width: 120px;
+   margin-bottom: 15px;
+   /* border: 1px dotted blue; */
+   background-color: transparent;
+   border-style: none;
+}
+#form-wrap{
+  overflow: hidden;
+  height: 447px;
+  position: relative;
+  top: 0px;
+  transition: all 1s ease-in-out .3s;
+}
+#form-wrap:before{
+  content: "";
+  position: absolute;
+  bottom: 128px;
+  left: 0px;
+  background: url('../img/before.png');
+  width:530px;
+  height: 317px;
+}
+#form-wrap:after{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background: url('../img/after.png');
+  width: 530px;
+  height: 259px;
+}
+#form-wrap.hide:after,
+#form-wrap.hide:before{
+  display: none;
+}
+#form-wrap:hover{
+  height: 800px;
+  top: -200px;
+}
+form{
+  background: #f8f9fa;
+  position: relative;
+  top: 200px;
+  overflow: hidden;
+  height: 200px;
+  width: 450px;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px dotted red;
+  /* border-right: 3px; */
+  text-align: center;
+  transition: all 1s ease-in-out .3s;
+}
+#form-wrap:hover form{
+  height: 530px;
+}
+#navbarNavAltMarkup{
+  margin-left: 65%;
+}
+#navanim{
+  background-image:linear-gradient(45deg,#fff,#f1f2fa);
+}
+@media (max-width: 576px) {
+  #form-wrap:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background: url('../img/after.png');
+    background-repeat: no-repeat;
+    background-size: 350px 300px;
+    width: 530px;
+    height: 259px;
+  }
+  #form-wrap:before{
+    content: "";
+    position: absolute;
+    bottom: 128px;
+    left: 0px;
+    background: url('../img/before.png');
+    background-repeat: no-repeat;
+    background-size: 350px 300px;
+    width:530px;
+    height: 317px;
+  }
+  form{
+    background: #f8f9fa;
+    position: relative;
+    top: 200px;
+    overflow: hidden;
+    height: 200px;
+    width: 300px;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px dotted red;
+    /* border-right: 3px; */
+    text-align: center;
+    transition: all 1s ease-in-out .3s;
+  }
+  #wrap{
+    width: 350px;
+    /* margin: 20px auto 0; */
+    height: 750px;
+  }
+}
