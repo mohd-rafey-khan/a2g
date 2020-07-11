@@ -72,9 +72,6 @@ form{
 #form-wrap:hover form{
   height: 530px;
 }
-#navbarNavAltMarkup{
-  margin-left: 65%;
-}
 #navanim{
   background-image:linear-gradient(45deg,#fff,#f1f2fa);
 }
