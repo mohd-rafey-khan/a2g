@@ -78,6 +78,42 @@ form{
 #navanim{
   background-image:linear-gradient(45deg,#fff,#f1f2fa);
 }
+.heading{
+  height: 100px;
+  /* background-color: red; */
+}
+#exclamation{
+  margin-top:100px;
+  margin-left:30%;
+  color:blue;
+  font-size: 20px;
+  margin-left: 20px;
+  animation: up 2s infinite;
+}
+@keyframes up {
+  0%{
+    font-size: 10px;
+  }
+  50%{
+    color: green;
+    font-size: 25px;
+  }
+  100%{
+    font-size: 30px;
+  }
+}
+#para{
+  position: absolute;
+  top: 20%;
+}
+#link{
+  position: absolute;
+  top: 60%;
+  color:#3aaf9f;
+  font-size:30px;
+  text-decoration:none;
+}
+
 @media (max-width: 576px) {
   #form-wrap:after{
     content: "";
@@ -105,7 +141,7 @@ form{
     background: #f8f9fa;
     position: relative;
     top: 200px;
-    overflow: hidden;
+    overflow: hidden;n
     height: 200px;
     width: 280px;
     margin: 0px auto;
@@ -120,4 +156,18 @@ form{
     /* margin: 20px auto 0; */
     height: 750px;
   }
+  .col1{
+    margin-bottom: 530px;
+  }
+  #exclamation{
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  #para{
+    margin-top: 100px;
+  }
+  #link{
+    margin-top: 500px;
+  }
+
 }
