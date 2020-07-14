@@ -1,0 +1,251 @@
+body,html{
+  margin: 0px;
+  padding: 0px;
+  background-color: #fff;
+}
+/* #navbarNavAltMarkup{
+  margin-left: 65%;
+} */
+.img{
+  z-index: 1000;
+}
+#navanim{
+  /* position: fixed; */
+  /* color: #fff; */
+  background-image: linear-gradient(#4500ca 4%,rgba(80,82,202,1) 50%),url(../images/divi/divi-gallery-hero-background.jpg),linear-gradient(60deg,#28005f 16%,#8300e5 64%,#0f3bff 100%);
+  /* background-image:linear-gradient(45deg,#fff,#f1f2fa); */
+  /* box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15); */
+}
+.header{
+  height: 600px;
+  background-image: linear-gradient(#4500ca 4%,rgba(69,0,202,0) 50%),url('img/header2.png'),linear-gradient(60deg,#28005f 16%,#8300e5 64%,#0f3bff 100%);
+  /* background-blend-mode:screen;  */
+}
+svg{
+  /* background-image: linear-gradient(#4500ca 4%,rgba(69,0,202,0) 50%),url(../images/divi/divi-gallery-hero-background.jpg),linear-gradient(60deg,#28005f 16%,#8300e5 64%,#0f3bff 100%); */
+  margin-top: -250px;
+}
+.circle-container{
+   height: 300px;
+   width: 300px;
+   /* border: 2px solid grey; */
+   position: absolute;
+   margin:auto;
+   padding-top: 5%;
+   display: flex;
+   /* align-items: center;
+   justify-content: center; */
+}
+.circle{
+  height: 300px;
+  width: 300px;
+  border: 5px solid #e0d8d8;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  animation: rotate 5s infinite;
+}
+.circle>div{
+  height: 300px;
+  width: 300px;
+  border: 5px solid #e0d8d8;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+}
+.circle>div:nth-child(1){
+  transform: rotateY(36deg);
+}
+.circle>div:nth-child(2){
+  transform: rotateY(72deg);
+}
+.circle>div:nth-child(3){
+  transform: rotateY(108deg);
+}
+.circle>div:nth-child(4){
+  transform: rotateY(144deg);
+}
+@keyframes rotate {
+  100%{
+    transform: rotateY(360deg)
+    rotateZ(360deg)
+    ;
+  }
+}
+.contentdata{
+   height: 400px;
+   overflow: hidden;
+}
+h3{
+  width: 100%;
+  margin-top: 100px;
+  animation: type 5s infinite steps(44);
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: consolas;
+  border-right: 1px solid grey;
+}
+p{
+  margin-top: 40px;
+  padding: 0;
+}
+@keyframes type {
+  0%{
+    width: 0ch;
+  }
+  100%{
+    width: 38ch;
+  }
+}
+/* style demo */
+
+/* <style style="text/css"> */
+div.slide-left {
+  width:80%;
+  overflow:hidden;
+}
+div.slide-left p {
+  animation: slide-left 40s;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 80%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/* </style> */
+
+/* <div class="slide-left"> */
+/* <p>CSS slide-in text...</p> */
+/* </div> */
+.services-text{
+  height: 150px;
+  text-align: center;
+  padding: 5%;
+}
+.services-text h4{
+  font-size: 40px;
+  color: #3aaf9f;
+  /* color: blue; */
+}
+/* @media (max-width: 320px) {
+  h3{
+    font-size: 15px;
+  }
+  h5{
+    font-size: 10px;
+  }
+} */
+::-webkit-scrollbar{
+  width: 0;
+}
+#scrollPath{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+#progressbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 0%;
+  background: linear-gradient(to top,#008aff,#00ffe7);
+  animation: scroll 5s linear infinite;
+}
+@keyframes scroll {
+  0%,100%{
+    filter: hue-rotate(0deg);
+  }
+  50%{
+    filter: hue-rotate(360deg);
+  }
+}
+#progressbar:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top,#008aff,#00ffe7);
+  filter: blur(30px);
+}
+#progressbar:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top,#008aff,#00ffe7);
+  filter: blur(30px);
+}
+#testimonial{
+  background-color: #8aa1e226;
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15)
+}
+#carouselExampleSlidesOnly{
+  text-align: center;
+}
+footer{
+  height: 300px;
+  margin-top: 5%;
+  /* background-image:linear-gradient(45deg,#fff,#f1f2fa); */
+  background-image: linear-gradient(#4500ca 4%,rgba(69,0,202,0) 50%),url('img/header2.png'),linear-gradient(60deg,#28005f 16%,#8300e5 64%,#0f3bff 100%);
+  box-shadow: 0px 0px 25px 0px rgba(90,87,209,1);
+}
+#exclamation{
+  /* margin-top:100px; */
+  /* margin-left:30%; */
+  color:blue;
+  font-size: 30px;
+  /* margin-left: 20px; */
+}
+#para{
+  position: relative;
+  top: 20%;
+  /* position: fixed; */
+  /* margin-top:10px;  */
+}
+#link{
+  /* position: absolute; */
+  /* top: 60%; */
+  color:#3aaf9f;
+  font-size:30px;
+  text-decoration:none;
+}
+/* mobile view */
+@media (max-width: 768px) {
+  h3{
+    font-size: 15px;
+  }
+  h5{
+    font-size: 10px;
+  }
+  svg{
+    margin-top: -350px;
+  }
+  .img{
+    width: 200px;
+    height: 300px;
+  }
+}
+
+
+
+/*
+demo */
