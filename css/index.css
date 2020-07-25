@@ -1,16 +1,32 @@
 body,html{
   margin: 0px;
   padding: 0px;
-  background-color: #fff;
+  background-color: #1c1c1dc2;
+  /* background-image: url('../img/back.jpg'); */
 }
+.rain{
+  /* background: url('../img/rain.png'); */
+  /* background-size: 95% 50%; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+ animation: rain .3s linear infinite;
+}
+@keyframes rain {
+
+   100%{
+       background-position: 3% 100%;
+   }
+}
+
 /* #navbarNavAltMarkup{
   margin-left: 65%;
 } */
 /* testimonial */
 .bodytest{
-  background: linear-gradient(90deg,#0072ff,#ff0058);
+  background: linear-gradient(90deg,#36363a,#000000);
   width: 100%;
   min-height: 100%;
+  color:#fff;
   overflow: hidden;
 }
 section{
@@ -32,11 +48,11 @@ section:before{
   border-left: 100vh solid #fff;
   opacity: 0.1;
 }
-section:before{
+section:after{
   content: '';
   position: absolute;
   top: -30%;
-  right: 0;
+  right: -8%;
   border-top: 100vh solid transparent;
   border-right: 100vh solid #fff;
   opacity: 0.10;
@@ -117,18 +133,18 @@ section:before{
 #navanim{
   /* position: fixed; */
   /* color: #fff; */
-  background-image: linear-gradient(#4500ca 4%,rgba(80,82,202,1) 50%),url(../images/divi/divi-gallery-hero-background.jpg),linear-gradient(60deg,#28005f 16%,#8300e5 64%,#0f3bff 100%);
+  background-image: linear-gradient(#0e0e0e 4%,rgb(14, 15, 15) 50%),url(../images/divi/divi-gallery-hero-background.jpg),linear-gradient(60deg,#28005f 16%,#181619 64%,#0e0e0e 100%);
   /* background-image:linear-gradient(45deg,#fff,#f1f2fa); */
   /* box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15); */
 }
 .header{
-  height: 600px;
-  background-image: linear-gradient(#4500ca 4%,rgba(69,0,202,0) 50%),url('img/header2.png'),linear-gradient(60deg,#28005f 16%,#8300e5 64%,#0f3bff 100%);
+  height:600px;
+  background-image: linear-gradient(#0e0e0e 4%,rgba(69,0,202,0) 50%),url(img/header2.png),linear-gradient(#080808 4%,rgba(12, 11, 12, 0) 50%),url(img/header2.png),linear-gradient(60deg,#414044 16%,#262427 64%,#181819 100%);
   /* background-blend-mode:screen;  */
 }
 svg{
   /* background-image: linear-gradient(#4500ca 4%,rgba(69,0,202,0) 50%),url(../images/divi/divi-gallery-hero-background.jpg),linear-gradient(60deg,#28005f 16%,#8300e5 64%,#0f3bff 100%); */
-  margin-top: -250px;
+  margin-top: -260px;
 }
 .circle-container{
    height: 300px;
@@ -144,7 +160,7 @@ svg{
 .circle{
   height: 300px;
   width: 300px;
-  border: 5px solid #e0d8d8;
+  border: 5px solid #38e0c12b;
   border-radius: 50%;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -153,7 +169,7 @@ svg{
 .circle>div{
   height: 300px;
   width: 300px;
-  border: 5px solid #e0d8d8;
+  border: 5px solid #38e0c12b;
   position: absolute;
   margin: auto;
   left: 0;
@@ -301,18 +317,24 @@ div.slide-left p {
 }
 #testimonial{
   background-color: #8aa1e226;
-  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15)
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15);
+}
+.fadescroll{
+  opacity: 0;
+}
+.fadescroll.animate__animated{
+  opacity:1;
 }
 #carouselExampleSlidesOnly{
   text-align: center;
 }
 footer{
   height: 350px;
-  margin-top: 5%;
-  margin-bottom:0;
+  /* margin-top: 5%; */
+  margin-bottom: 0;
   /* background-image:linear-gradient(45deg,#fff,#f1f2fa); */
-  background-image: linear-gradient(#4500ca 4%,rgba(69,0,202,0) 50%),url('img/header2.png'),linear-gradient(60deg,#28005f 16%,#8300e5 64%,#0f3bff 100%);
-  box-shadow: 0px 0px 25px 0px rgba(90,87,209,1);
+  background-image: linear-gradient(#080808 4%,rgba(12, 11, 12, 0) 50%),url(img/header2.png),linear-gradient(60deg,#414044 16%,#262427 64%,#181819 100%);
+  box-shadow: 0px 0px 25px 0px rgb(26, 25, 27);
 }
 .socialicon{
   display: grid;
@@ -344,6 +366,7 @@ footer{
 #para{
   position: relative;
   top: 20%;
+  color:#fff;
   /* position: fixed; */
   /* margin-top:10px;  */
 }
@@ -354,6 +377,152 @@ footer{
   font-size:30px;
   text-decoration:none;
 }
+/* mobile navbar  csss*/
+#body{
+  /* background-color: #f273ba; */
+  font-family: tahoma;
+  /* overflow: hidden; */
+  display: none;
+  height: 120px;
+  padding-right:50%;
+  /* padding-bottom: 50px; */
+  /* margin-top: -20px; */
+}
+.navbarm{
+  /* position: absolute; */
+  /* top: 10%; */
+  /* left: 0; */
+
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  /* background: white; */
+  margin: 30px auto;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  color: #2ee0a8;
+  transition: 0.24s 0.2s;
+  box-shadow: -3px -3px 5px 0px #ffffffa6,
+              3px 3px 5px 0px #0000004a;
+}
+.navbarm:hover{
+  box-shadow: -3px -3px 5px 0px #ffffffa6 inset,
+              3px 3px 5px 0px #0000004a inset;
+}
+.navbarm .menu{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: -75px;
+  left: -75px;
+  border: 150px solid transparent;
+  cursor: default;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 1.4s 0.07s;
+  z-index: -1;
+}
+.navbarm:hover .menu{
+  transition: transform 0.4s 0.08s, z-index 0s 0.5s;
+  transform: scale(1);
+  z-index: 1;
+}
+.navbarm .menu li{
+  position: absolute;
+  top: -95px;
+  left: -95px;
+  transform-origin: 95px 110px;
+  transition: all 0.5s 0.1s;
+
+}
+.navbarm:hover .menu li{
+  transition: all 0.7s;
+}
+.navbarm .menu li a{
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  /* background: white; */
+  text-decoration: none;
+  position: absolute;
+  font-size: 13px;
+  color: #2ee0a8;
+  transition: 0.7s;
+  box-shadow: -3px -3px 5px 0px #ffffffa6,
+              3px 3px 5px 0px #0000004a;
+}
+.navbarm .menu li a:hover{
+  box-shadow: -3px -3px 5px 0px #ffffffa6 inset,
+              3px 3px 5px 0px #0000004a inset;
+}
+.navbarm:hover .menu li:nth-child(1){
+  transition-delay: 0.02s;
+  transform: rotate(80deg);
+}
+ .navbarm:hover .menu li:nth-child(1) a{
+   transition-delay: 0.04s;
+   transform: rotate(640deg);
+   width: 90px;
+ }
+.navbarm:hover .menu li:nth-child(2){
+  transition-delay: 0.04s;
+  transform: rotate(135deg);
+}
+ .navbarm:hover .menu li:nth-child(2) a{
+   transition-delay: 0.08s;
+    transform: rotate(585deg);
+    width: 80px;
+ }
+.navbarm:hover .menu li:nth-child(3){
+  transition-delay: 0.06s;
+  transform: rotate(180deg);
+}
+ .navbarm:hover .menu li:nth-child(3) a{
+   transition-delay: 0.12s;
+   transform: rotate(540deg);
+   width: 100px;
+ }
+ .navbarm:hover .menu li:nth-child(4){
+   transition-delay: 0.08s;
+   transform: rotate(255deg);
+ }
+ .navbarm:hover .menu li:nth-child(4) a{
+   transition-delay: 0.16s;
+   transform: rotate(465deg);
+   width: 80px;
+ }
+ .navbarm:hover .menu li:nth-child(5){
+   transition-delay: 0.01s;
+   transform: rotate(300deg);
+ }
+ .navbarm:hover .menu li:nth-child(5) a{
+   transition-delay: 0.02s;
+   transform: rotate(415deg);
+   width: 80px;
+ }
+ .navbarm:hover .menu li:nth-child(6){
+   transition-delay: 0.12s;
+   transform: rotate(285deg);
+ }
+ .navbarm:hover .menu li:nth-child(6) a{
+   transition-delay: 0.24s;
+   transform: rotate(435deg);
+ }
+ .navbarm:hover .menu li:nth-child(7){
+   transition-delay: 0.14s;
+   transform: rotate(325deg);
+ }
+ .navbarm:hover .menu li:nth-child(7) a{
+   transition-delay: 0.28s;
+   transform: rotate(395deg);
+ }
+/* end */
 /* mobile view */
 @media (max-width: 768px) {
   h3{
@@ -365,9 +534,22 @@ footer{
   svg{
     margin-top: -350px;
   }
+  .header{
+    height: 800px;
+  }
   .img{
     width: 200px;
     height: 300px;
+  }
+  #navanim{
+    display:none;
+  }
+  #body{
+    display: inline-block;
+    /* position: fixed; */
+  }
+  footer{
+    height: 400px;
   }
 }
 
