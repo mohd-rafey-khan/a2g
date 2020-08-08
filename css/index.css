@@ -1,12 +1,15 @@
 body,html{
   margin: 0px;
   padding: 0px;
-  background-color: #c9e8ea29;
+  background-color: #f6f6f6;
 }
 /* #navbarNavAltMarkup{
   margin-left: 65%;
 } */
 /* testimonial */
+.portcard{
+
+}
 .bodytest{
   background: linear-gradient(90deg,#255c68ba,#6ce1cbbd);
   width: 100%;
@@ -120,18 +123,22 @@ section:before{
   z-index: 1000;
 }
 #navanim{
-  /* position: fixed; */
-  /* color: #fff; */
-  background: transparent;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  background: #052035;
   /* background-image: linear-gradient(#4500ca 4%,rgba(80,82,202,1) 50%),url(../images/divi/divi-gallery-hero-background.jpg),linear-gradient(60deg,#28005f 16%,#8300e5 64%,#0f3bff 100%); */
   /* background-image:linear-gradient(45deg,#fff,#f1f2fa); */
   /* box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15); */
 }
 .header{
-  height: 700px;
-  background-image: url('../img/background.png');
+
+  height: 800px;
+  background-image: url('../img/ap.jpg');
   /* background-image: linear-gradient(#4500ca 4%,rgba(69,0,202,0) 50%),url('img/header2.png'),linear-gradient(60deg,#28005f 16%,#8300e5 64%,#0f3bff 100%); */
   /* background-blend-mode:screen;  */
+  margin-bottom: 10%;
 }
 .bubbles img{
   width: 50px;
@@ -186,6 +193,7 @@ section:before{
 .bubbles{
   width: 100%;
   display: flex;
+  height: 200px;
   /* overflow: hidden; */
   align-items: center;
   justify-content: space-between;
@@ -193,13 +201,7 @@ section:before{
   bottom: 80px;
   z-index: 99;
 }
-svg{
-  /* background-image: linear-gradient(#4500ca 4%,rgba(69,0,202,0) 50%),url(../images/divi/divi-gallery-hero-background.jpg),linear-gradient(60deg,#28005f 16%,#8300e5 64%,#0f3bff 100%); */
-  margin-top: 80px;
-  /* z-index: 9999;
-  overflow: hidden; */
-  /* display: none; */
-}
+
 .circle-container{
    height: 300px;
    width: 300px;
@@ -214,7 +216,7 @@ svg{
 .circle{
   height: 300px;
   width: 300px;
-  border: 5px solid #73f0dba1;
+  border: 5px solid #d3d3d3;
   border-radius: 50%;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -223,7 +225,7 @@ svg{
 .circle>div{
   height: 300px;
   width: 300px;
-  border: 5px solid #73f0dba1;
+  border: 5px solid #d3d3d3;
   position: absolute;
   margin: auto;
   left: 0;
@@ -262,7 +264,7 @@ h3{
   overflow: hidden;
   white-space: nowrap;
   font-family: consolas;
-  border-right: 1px solid grey;
+  border-right: 1px solid white;
 }
 p{
   margin-top: 40px;
@@ -387,7 +389,7 @@ footer{
   height: 350px;
   margin-top: 5%;
   margin-bottom:0;
-  background-image:linear-gradient(90deg,#255c68,#6ce1cb);
+  background-image:linear-gradient(90deg,#255c68,#052035);
   /* background-image: linear-gradient(#4500ca 4%,rgba(69,0,202,0) 50%),url('img/header2.png'),linear-gradient(60deg,#28005f 16%,#8300e5 64%,#0f3bff 100%); */
   box-shadow: 0px 0px 25px 0px rgba(98,208,191,1);
 }
@@ -434,6 +436,7 @@ footer{
 .svgcontainer{
   margin-top: -150px;
 }
+
 /* mobile view */
 @media (max-width: 768px) {
   h3{
@@ -443,13 +446,16 @@ footer{
     font-size: 10px;
   }
   svg{
-    margin-top: 150px;
+    margin-top: 200px;
   }
   .imgsvg1{
     width: 300px;
   }
   .imgsvg2{
     width: 300px;
+  }
+  .imgsvg3{
+    width: 600px;
   }
   .svgcontainer{
     margin-top: 50px;
@@ -462,6 +468,16 @@ footer{
     margin-bottom: 50px;
     /* margin-left: 100px; */
     text-align: center;
+  }
+  #roundcircle{
+    /* margin-left:1%; */
+  }
+  #a2gsvg1{
+    margin-top: 80px;
+  }
+  #a2gsvg2{
+    margin-left: 250px;
+    margin-top: 130px;
   }
 }
 
