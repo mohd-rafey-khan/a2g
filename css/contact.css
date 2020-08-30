@@ -178,6 +178,9 @@ footer{
   background: linear-gradient(to top,#008aff,#00ffe7);
   filter: blur(30px);
 }
+iframe{
+  width:400px;
+}
 @media (max-width: 576px) {
   #form-wrap:after{
     content: "";
@@ -189,6 +192,9 @@ footer{
     background-size: 300px 300px;
     width: 530px;
     height: 259px;
+  }
+  iframe{
+    width: 300px;
   }
   #form-wrap:before{
     content: "";
@@ -233,5 +239,7 @@ footer{
   #link{
     margin-top: 500px;
   }
-
+  #detailcont{
+    margin-top:-100px;
+  }
 }
