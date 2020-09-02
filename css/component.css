@@ -32,7 +32,7 @@ Build the scene and rotate on hover
 
 .movie {
 	width: 260px;
-	height: 400px;
+	height: 300px;
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
@@ -53,12 +53,12 @@ Build the scene and rotate on hover
 /*************************************
 Transform and style the two planes
 **************************************/
-
+/* rafye */
 .movie .poster,
 .movie .info {
 	position: absolute;
 	width: 260px;
-	height: 400px;
+	height: 300px;
 	background-color: #fff;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
@@ -190,7 +190,7 @@ Posters and still images
   background-image: url("../smm.jpg");
 }
 
-.scene:nth-child(1) .info header {
+/* .scene:nth-child(1) .info header {
 	background-image: url("../dm-1.png");
 }
 
@@ -204,7 +204,7 @@ Posters and still images
 
 .scene:nth-child(4) .info header {
 	background-image: url("../smmh.png");
-}
+} */
 /*************************************
 Fallback
 **************************************/
