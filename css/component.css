@@ -24,6 +24,7 @@ Build the scene and rotate on hover
 	width: 260px;
 	height: 400px;
 	margin: 30px;
+	margin-bottom: -50px;
 	float: left;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
@@ -189,7 +190,21 @@ Posters and still images
 .scene:nth-child(4) .poster {
   background-image: url("../smm.jpg");
 }
-
+.scene:nth-child(5) .poster {
+  background-image: url("../googleads.jpg");
+}
+.scene:nth-child(6) .poster {
+  background-image: url("../leadgeneration.jpeg");
+}
+.scene:nth-child(7) .poster {
+  background-image: url("../emailmarketingservices.jpg");
+}
+.scene:nth-child(8) .poster {
+  background-image: url("../googleanalytics.png");
+}
+.scene:nth-child(9) .poster {
+  background-image: url("../youtubemarketing.jpg");
+}
 /* .scene:nth-child(1) .info header {
 	background-image: url("../dm-1.png");
 }
@@ -220,5 +235,6 @@ Media Queries
 	.scene {
 		float: none;
 		margin: 30px auto 60px;
+		margin-bottom: -50px;
 	}
 }
