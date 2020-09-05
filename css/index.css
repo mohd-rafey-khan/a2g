@@ -380,6 +380,8 @@ div.slide-left p {
 }
 #testimonial{
   background-color: #8aa1e226;
+  height: 300px;
+  /* padding-top:10%;  */
   box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15)
 }
 #carouselExampleSlidesOnly{
